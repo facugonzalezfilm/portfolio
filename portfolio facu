@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - [Tu Nombre]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        section {
+            width: 80%;
+            max-width: 1000px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .video, .photo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .video iframe, .photo img {
+            width: 100%;
+            max-width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            margin: 20px 0;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .palette {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .color-option {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            cursor: pointer;
+            border: 2px solid #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>[Tu Nombre]</h1>
+        <nav>
+            <a href="#portfolio">Portafolio</a>
+            <a href="#photography">Fotografía Analógica</a>
+            <a href="#about">Sobre Mí</a>
+        </nav>
+    </header>
+
+    <section id="portfolio">
+        <h2>Portafolio de Videos</h2>
+        <div class="video">
+            <!-- Ejemplo de videos embebidos de Vimeo o YouTube -->
+            <iframe src="https://player.vimeo.com/video/123456789" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/987654321" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="photography">
+        <h2>Fotografía Analógica</h2>
+        <div class="photo">
+            <!-- Ejemplo de fotos -->
+            <img src="https://via.placeholder.com/300" alt="Foto 1">
+            <img src="https://via.placeholder.com/300" alt="Foto 2">
+            <img src="https://via.placeholder.com/300" alt="Foto 3">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>Breve descripción sobre ti y tu trabajo. Aquí puedes incluir detalles sobre tu experiencia, tu enfoque en la cinematografía y cualquier otra información relevante que quieras compartir con tus visitantes.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Tu Nombre]. Todos los derechos reservados.</p>
+        <div class="palette">
+            <div class="color-option" style="background-color: #f0a5a5;" onclick="changeColor('#f0a5a5')"></div>
+            <div class="color-option" style="background-color: #a5d8f0;" onclick="changeColor('#a5d8f0')"></div>
+            <div class="color-option" style="background-color: #a5f0b1;" onclick="changeColor('#a5f0b1')"></div>
+            <div class="color-option" style="background-color: #f0e3a5;" onclick="changeColor('#f0e3a5')"></div>
+            <div class="color-option" style="background-color: #e0a5f0;" onclick="changeColor('#e0a5f0')"></div>
+        </div>
+    </footer>
+
+</body>
+</html>
